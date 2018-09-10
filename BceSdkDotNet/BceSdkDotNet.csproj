@@ -1,15 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>BaiduBce</RootNamespace>
-    <PackageId>BceSdkDotNet</PackageId>
+    <PackageId>BceSdkDotNetCore</PackageId>
     <Description>BCE SDK for .NET Core</Description>
     <Company>Baidu.com, Inc.</Company>
     <Authors>Baidu.com, Inc.</Authors>
-    <Version>1.0.2</Version>
+    <Version>1.0.2.0910</Version>
     <AssemblyVersion>1.0.2.0910</AssemblyVersion>
     <FileVersion>1.0.2.0910</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>BceSdkDotNetCore</Product>
+    <AssemblyName>BceSdkDotNetCore</AssemblyName>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/sanjusss/bce-sdk-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sanjusss/bce-sdk-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
