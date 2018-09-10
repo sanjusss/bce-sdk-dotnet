@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>BaiduBce</RootNamespace>
     <PackageId>BceSdkDotNetCore</PackageId>
     <Description>BCE SDK for .NET Core</Description>
     <Company>Baidu.com, Inc.</Company>
     <Authors>Baidu.com, Inc.</Authors>
-    <Version>1.0.2.0910</Version>
-    <AssemblyVersion>1.0.2.0910</AssemblyVersion>
-    <FileVersion>1.0.2.0910</FileVersion>
+    <Version>1.0.2.0911</Version>
+    <AssemblyVersion>1.0.2.0911</AssemblyVersion>
+    <FileVersion>1.0.2.0911</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>BceSdkDotNetCore</Product>
     <AssemblyName>BceSdkDotNetCore</AssemblyName>
@@ -17,15 +17,16 @@
     <PackageProjectUrl>https://github.com/sanjusss/bce-sdk-dotnet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/sanjusss/bce-sdk-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>支持.NET Standard 2.0（.NET Core 2.0 和 .NET Framework 4.6.1）</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,12 @@
-﻿# 安装SDK工具包
+﻿
+[![Supported](https://img.shields.io/badge/Supported-.NET4.6.1%2B%2F.NETCore2.0%2B-brightgreen.svg)](#)
+
+# 安装SDK工具包
 
 **运行环境**
 
-C# SDK工具包可在Microsoft .NET Core 2.1 环境下运行。
+
+C# SDK工具包可在Microsoft .NET Standard 2.0 环境下运行，即.NET Core 2.0和.NET Framework 4.6.1。
 
 **SDK目录结构**
 
