@@ -284,6 +284,10 @@ namespace BaiduBce
         // How to: Determine Which .NET Framework Versions Are Installed
         private static string GetFrameworkVersion()
         {
+#if NETCOREAPP
+            return Environment.Version.ToString();
+        }
+#else
             using (RegistryKey ndpKey =
                 Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\"))
             {
@@ -358,5 +362,6 @@ namespace BaiduBce
             }
             return "4.0";
         }
+#endif
     }
 }

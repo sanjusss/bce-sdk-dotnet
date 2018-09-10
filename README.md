@@ -1,18 +1,8 @@
-# 安装SDK工具包
+﻿# 安装SDK工具包
 
 **运行环境**
 
-C# SDK工具包可在Microsoft .NET Framework v3.5环境下运行。
-
-**安装步骤**
-
-1. 在[官方网站](http://bce.baidu.com/doc/SDKTool/index.html)下载C# SDK压缩工具包。
-
-2. 将下载的`bce-dotnet-sdk-version.zip`解压后，复制到工程文件夹中。
-
-3. 在Visual Studio项目中“添加引用 -> 浏览”。
-
-4. 添加SDK工具包`BceSdkDotNet.dll`和第三方依赖工具包`log4net.dll`和`Newtonsoft.Json.dll`。
+C# SDK工具包可在Microsoft .NET Core 2.1 环境下运行。
 
 **SDK目录结构**
 
