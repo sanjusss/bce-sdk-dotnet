@@ -1,3 +1,4 @@
+﻿
 version: 1.0.2.0911.{build}
 branches:
   only:
@@ -6,9 +7,8 @@ image: Visual Studio 2017
 shallow_clone: true
 build_script:
 - cmd: >-
-    dotnet build -o result .
-
-    dotnet publish -o publish .
+    dotnet build -c Release -o result .
+    dotnet publish -c Release -o publish .
 artifacts:
 - path: BceSdkDotNet\publish
   name: bce-sdk-dotnetcore-$(APPVEYOR_BUILD_VERSION)
