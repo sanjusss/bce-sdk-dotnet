@@ -1,0 +1,30 @@
+version: 1.0.2.0911.{build}
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+shallow_clone: true
+build_script:
+- cmd: >-
+    dotnet build -o result .
+
+    dotnet publish -o publish .
+artifacts:
+- path: BceSdkDotNet\publish
+  name: bce-sdk-dotnetcore-$(APPVEYOR_BUILD_VERSION)
+  type: WebDeployPackage
+- path: '**\*.nupkg'
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: VFLWVehXTfNaqBsG5F8ZkEWTFKvDxhk71wQJ+ZDspUEoqfvXpbQwkB0OA/N+r/qD
+  draft: false
+  force_update: true
+  on:
+    APPVEYOR_REPO_TAG: true
+- provider: NuGet
+  api_key:
+    secure: Rqf5risUJkZAEiDPi/1c30DZ5dpcJ/XYOyd4ujH15av4x8t78ZYsl/D9SLH1Jgy2
+  artifact: /.*\.nupkg/
+  on:
+    APPVEYOR_REPO_TAG: true
