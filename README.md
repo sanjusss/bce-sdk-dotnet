@@ -1,5 +1,9 @@
 ﻿
 [![Supported](https://img.shields.io/badge/Supported-.NET4.6.1%2B%2F.NETCore2.0%2B-brightgreen.svg)](#)
+[![Build status](https://ci.appveyor.com/api/projects/status/u9mxt2mbfskpa03r?svg=true)](https://ci.appveyor.com/project/sanjusss/bce-sdk-dotnet)
+[![GitHub tag](https://img.shields.io/github/tag/sanjusss/bce-sdk-dotnet.svg)](https://github.com/sanjusss/bce-sdk-dotnet/tags)
+[![GitHub release](https://img.shields.io/github/release/sanjusss/bce-sdk-dotnet.svg)](https://github.com/sanjusss/bce-sdk-dotnet/releases)
+
 
 # 安装SDK工具包
 **安装方法**
@@ -7,6 +11,7 @@
 ```
 Install-Package BceSdkDotNetCore
 ```
+或 [点击打开下载页面](https://github.com/sanjusss/bce-sdk-dotnet/releases)
 
 **运行环境**
 
